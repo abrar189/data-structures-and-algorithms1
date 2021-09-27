@@ -4,5 +4,6 @@
 
 |    |    |    |
 |----|----|----|
-|1| [README](challenge1/README.md) |
+|1| [README1](challenge1/README.md) |
+|2| [README2](challenge2/README.md) |
 |    |    |    |
