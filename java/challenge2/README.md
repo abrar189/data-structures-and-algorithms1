@@ -6,7 +6,7 @@
 
 ## Whiteboard Process
 
-![image](../img/challenge2.PNG)
+![image](../img/ch2.PNG)
 
 ## Approach & Efficiency
 
