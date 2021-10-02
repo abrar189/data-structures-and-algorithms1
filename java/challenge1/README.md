@@ -1,10 +1,10 @@
 # Reverse an Array
 
- *I found it so easy and comfurtable*
+write method accept an array  and return reversed of array
 
 ## Whiteboard Process
 
-![image](../img/challenge1.PNG)
+![image](../img/ch1.PNG)
 
 ## Approach & Efficiency
 
