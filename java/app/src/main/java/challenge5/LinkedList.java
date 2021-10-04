@@ -18,20 +18,20 @@ public class LinkedList {
   public boolean includes(int value) {
 
     Node current = head;
-    while(current != null){
-      if (current.value == value){
+    while (current != null) {
+      if (current.value == value) {
         return true;
       }
-      current=current.next;
+      current = current.next;
     }
     return false;
   }
 
-  public  String toString(){
+  public String toString() {
     String printList = "";
     Node current = head;
-    while (current!= null) {
-      printList =  "{"+current.value +"}"  +printList;
+    while (current != null) {
+      printList = "{" + current.value + "}" + printList;
 
       if (current.next == null) {
         printList = printList + "NULL";
@@ -42,12 +42,12 @@ public class LinkedList {
     return printList;
   }
 
-   public void append(int num){
-    Node newNode= new Node(num);
-    if (head.next != null){
-      newNode.next=head;
+  public void append(int num) {
+    Node newNode = new Node(num);
+    if (head.next != null) {
+      newNode.next = head;
     }
-    head=newNode;
+    head = newNode;
   }
 
   public void insertAfter(int valueNode, int newNodeValue) {
@@ -85,4 +85,29 @@ public class LinkedList {
     }
 
   }
+
+  public String kthFromEnd(int k) {
+    Node current = head;
+    int counter = 0;
+    while (current.next != null) {
+      current = current.next;
+      counter++;
+    }
+
+    if (k > counter || k < 0) {
+      return "Exception";
+    } else {
+      current = head;
+      for (int i = counter ; i >= counter-k; i--) {
+        if (i == counter-k) {
+          return "{"+current.value+"}";
+        }
+        current = current.next;
+      }
+    }
+    return "Exception";
+  }
+
+
 }
+

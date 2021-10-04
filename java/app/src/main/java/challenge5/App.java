@@ -4,24 +4,34 @@
 package challenge5;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+  public String getGreeting() {
+    return "Hello World!";
+  }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+  public static void main(String[] args) {
+    System.out.println(new App().getGreeting());
 
     LinkedList list = new LinkedList();
     list.insert(8);
     list.insert(5);
     list.insert(3);
+    list.insert(6);
     list.insert(1);
+    list.insert(10);
 
 
-list.append(6);
-list.insertBefore(3,9);
-list.insertAfter(5,7);
-    System.out.println(list.includes(9));
     System.out.println(list.toString());
-}
+    System.out.println("-----------------------------------------------");
+    System.out.println(list.kthFromEnd(3));
+
+    list.append(6);
+    list.insertBefore(1, 9);
+    list.insertAfter(5, 7);
+
+    System.out.println(list.includes(9));
+
+    System.out.println("-----------------------------------------------");
+    System.out.println(list.toString());
+
+  }
 }
