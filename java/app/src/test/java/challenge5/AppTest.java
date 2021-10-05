@@ -18,13 +18,63 @@ class AppTest {
     assertEquals( null , testList.head );
   }
 
+  @Test
+  void testToString() {
+    LinkedList list = new LinkedList();
+    list.insert(5);
+    list.insert(6);
+    String expected = "{5}{6}NULL";
+    assertEquals(expected, list.toString());
+  }
   @Test void includesTest() {
     LinkedList testList = new LinkedList();
     testList.insert(10);
     assertEquals( true , testList.includes(10) );
     assertEquals( false , testList.includes(5) );
   }
+  @Test
+  void testAppend() {
+    LinkedList list = new LinkedList();
+    list.append1(5);
+    String expected = "{5}NULL";
+    assertEquals(expected, list.toString());
+  }
+  @Test
+  void testinsertbefor() {
+    LinkedList list = new LinkedList();
+    list.append1(1);
+    list.append1(2);
+    list.append1(3);
+    list.insertBefore(3, 1000);
+    String expected = "{1}{2}{1000}{3}NULL";
+    assertEquals(expected, list.toString());
+  }
 
+  @Test
+  void testinsertAfterr() {
+    LinkedList list = new LinkedList();
+    list.append1(1);
+    list.append1(2);
+    list.append1(3);
+    list.insertAfter(3, 1000);
+    String expected = "{1}{2}{3}{1000}NULL";
+    assertEquals(expected, list.toString());
+  }
+  @Test
+  void testZip() {
+    LinkedList list1 = new LinkedList();
+    list1.append1(9);
+    list1.append1(8);
+    list1.append1(7);
+    list1.append1(6);
+    LinkedList list2 = new LinkedList();
+    list2.append1(1);
+    list2.append1(2);
+    list2.append1(3);
+    LinkedList zippedList=new LinkedList();
+    zippedList.head=zippedList.zipLists(list1,list2);
+    assertEquals("{9}{1}{8}{2}{7}{3}{6}NULL",zippedList.toString());
+  }
 }
 
 

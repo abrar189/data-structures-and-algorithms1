@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge5/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge5/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge5/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge5/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge5/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge5/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/challenge5/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/challenge5/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -54,7 +58,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest.appHasAGreeting">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -64,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.appHasAGreeting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest.appHasAGreeting&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -85,12 +89,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.appendTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.testZip" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest.appendTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest.testZip&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -106,12 +110,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.emptyList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.testinsertAfter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest.emptyList&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest.testinsertAfter&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -127,12 +131,33 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.includesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.testinsertAfterr" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest.includesTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest.testinsertAfterr&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppTest.testinsertbefor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest.testinsertbefor&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -150,10 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppTest.appHasAGreeting" />
-        <item itemvalue="Gradle.AppTest.appendTest" />
-        <item itemvalue="Gradle.AppTest.emptyList" />
-        <item itemvalue="Gradle.AppTest.includesTest" />
+        <item itemvalue="Gradle.AppTest" />
+        <item itemvalue="Gradle.AppTest.testinsertAfterr" />
+        <item itemvalue="Gradle.AppTest.testinsertbefor" />
+        <item itemvalue="Gradle.AppTest.testinsertAfter" />
+        <item itemvalue="Gradle.AppTest.testZip" />
       </list>
     </recent_temporary>
   </component>
