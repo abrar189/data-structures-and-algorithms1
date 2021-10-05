@@ -5,13 +5,22 @@ public class LinkedList {
   Node head;
 
 
-  public void insert(int num) {
-    Node newNode = new Node(num);
-    if (head != null) {
-      newNode.next = head;
+  public void insert(int data) {
+    if (head == null) {
+      Node node = new Node(data);
+      head = node;
+    } else {
+      Node current;
+      current = head;
+      while (current.next != null) {
+        current = current.next;
+      }
+
+      Node node = new Node(data);
+      current.next = node;
 
     }
-    head = newNode;
+
   }
 
 
@@ -31,7 +40,7 @@ public class LinkedList {
     String printList = "";
     Node current = head;
     while (current != null) {
-      printList = "{" + current.value + "}" + printList;
+      printList = printList + "{" + current.value + "}";
 
       if (current.next == null) {
         printList = printList + "NULL";
@@ -42,15 +51,28 @@ public class LinkedList {
     return printList;
   }
 
-  public void append(int num) {
+//  public void append(int num) {
+//    Node newNode = new Node(num);
+//    if (head.next != null) {
+//      newNode.next = head;
+//    }
+//    head = newNode;
+//  }
+
+  public void append1(int num) {
     Node newNode = new Node(num);
-    if (head.next != null) {
-      newNode.next = head;
+    if (head == null) {
+      head = newNode;
+    } else {
+      Node current = head;
+      while (current.next != null) {
+        current = current.next;
+      }
+      current.next = newNode;
     }
-    head = newNode;
   }
 
-  public void insertAfter(int valueNode, int newNodeValue) {
+  public void insertBefore(int valueNode, int newNodeValue) {
     Node newNode = new Node(newNodeValue);
     if (head == null) {
       head = newNode;
@@ -69,7 +91,7 @@ public class LinkedList {
     }
   }
 
-  public void insertBefore(int valueNode, int newNodeValue) {
+  public void insertAfter(int valueNode, int newNodeValue) {
     Node newInsertNode = new Node(newNodeValue);
     if (head == null) {
       head = newInsertNode;
@@ -98,9 +120,9 @@ public class LinkedList {
       return "Exception";
     } else {
       current = head;
-      for (int i = counter ; i >= counter-k; i--) {
-        if (i == counter-k) {
-          return "{"+current.value+"}";
+      for (int i = counter; i >= counter - k; i--) {
+        if (i == counter - k) {
+          return "{" + current.value + "}";
         }
         current = current.next;
       }
@@ -109,5 +131,30 @@ public class LinkedList {
   }
 
 
+  public Node zipLists(LinkedList list1, LinkedList list2) {
+
+    if (list1.head == null) {
+      return list2.head;
+    } else if (list2.head == null) {
+      return list1.head;
+    } else {
+      Node current1 = list1.head;
+      Node current2 = list2.head;
+      Node list1Next, list2Next;
+
+      while (current1 != null && current2 != null) {
+
+        list1Next = current1.next;
+        list2Next = current2.next;
+
+        current2.next = list1Next;
+        current1.next = current2;
+
+        current1 = list1Next;
+        current2 = list2Next;
+      }
+      return list1.head;
+    }
+  }
 }
 

@@ -12,6 +12,7 @@ public class App {
     System.out.println(new App().getGreeting());
 
     LinkedList list = new LinkedList();
+
     list.insert(8);
     list.insert(5);
     list.insert(3);
@@ -19,19 +20,33 @@ public class App {
     list.insert(1);
     list.insert(10);
 
+    LinkedList list1 = new LinkedList();
+    list1.append1(1);
+    list1.append1(2);
+    list1.append1(3);
 
-    System.out.println(list.toString());
+    LinkedList list2 = new LinkedList();
+    list2.append1(7);
+    list2.append1(8);
+    list2.append1(9);
+
+
+    System.out.println("List before change ==> "+list.toString());
     System.out.println("-----------------------------------------------");
     System.out.println(list.kthFromEnd(3));
 
-    list.append(6);
+    list.append1(6);
     list.insertBefore(1, 9);
     list.insertAfter(5, 7);
 
     System.out.println(list.includes(9));
 
     System.out.println("-----------------------------------------------");
-    System.out.println(list.toString());
+    System.out.println("List after change ==> "+list.toString());
+
+    System.out.println("-----------------------------------------------");
+    list.head = list.zipLists(list1, list2);
+    System.out.println("List for Zip function ==> "+list.toString());
 
   }
 }
