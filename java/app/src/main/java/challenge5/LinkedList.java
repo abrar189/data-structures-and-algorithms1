@@ -120,7 +120,7 @@ public class LinkedList {
       return "Exception";
     } else {
       current = head;
-      for (int i = counter; i >= counter - k; i--) {
+      for (int i = counter; i >= counter -k; i--) {
         if (i == counter - k) {
           return "{" + current.value + "}";
         }
@@ -155,6 +155,44 @@ public class LinkedList {
       }
       return list1.head;
     }
+  }
+  public boolean isPalindrome() {
+  Node current;
+  current=head;
+    if(current==null || current.next==null)
+      return true;
+    Node node1 = head;
+    Node node2 = head;
+    while (node1 != null && node1.next != null) {
+      node1 = node1.next.next;
+      node2 = node2.next;
+    }
+
+    if (node1 != null) {
+      node2 = node2.next;
+    }
+    node2 = reverse(node2);
+    node1 = head;
+
+    while (node2 != null) {
+      if (node1.value != node2.value) {
+        return false;
+      }
+      node1 = node1.next;
+      node2 = node2.next;
+    }
+    return true;
+  }
+
+  public Node reverse(Node head) {
+   Node prev = null;
+    while (head != null) {
+      Node next = head.next;
+      head.next = prev;
+      prev = head;
+      head = next;
+    }
+    return prev;
   }
 }
 

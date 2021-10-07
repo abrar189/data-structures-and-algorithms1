@@ -30,6 +30,15 @@ public class App {
     list2.append1(8);
     list2.append1(9);
 
+    LinkedList list3 = new LinkedList();
+    list3.insert(2);
+    list3.insert(1);
+    list3.insert(0);
+    list3.insert(1);
+    list3.insert(2);
+
+
+
 
     System.out.println("List before change ==> "+list.toString());
     System.out.println("-----------------------------------------------");
@@ -48,5 +57,8 @@ public class App {
     list.head = list.zipLists(list1, list2);
     System.out.println("List for Zip function ==> "+list.toString());
 
+    System.out.println("-----------------------------------------------");
+
+    System.out.println(list3.isPalindrome());
   }
 }

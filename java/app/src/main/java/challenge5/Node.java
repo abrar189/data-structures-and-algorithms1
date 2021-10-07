@@ -8,4 +8,5 @@ public class Node {
   public Node(int num){
     this.value=num;
   }
+
 }
