@@ -4,7 +4,7 @@ method responsible about zipping two linked list and return the head for the zip
 
 ## Whiteboard Process
 
-![image](../img/challenge8.PNG)
+![image](../img/ch8.PNG)
 
 ## Approach & Efficiency
 
