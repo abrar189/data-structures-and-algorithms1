@@ -4,7 +4,7 @@ kthFromEnd(int) write a method that Return the node’s value that is k (given n
 
 ## Whiteboard Process
 
-![image](../img/challenge7.PNG)
+![image](../img/ch7.PNG)
 
 ## Approach & Efficiency
  time : O(n) scape : O(1)
