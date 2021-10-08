@@ -20,7 +20,7 @@ insertAfter(int , int) method to add a new node with the given new value immedia
 
 ## Whiteboard Process
 
-![image](../img/ch6After.PNG)
+![image](../img/ch6after.PNG)
 
 ## Approach & Efficiency
 
