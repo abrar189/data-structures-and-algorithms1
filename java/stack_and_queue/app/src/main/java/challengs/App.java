@@ -16,16 +16,23 @@ public class App {
 
 
     Pseudo test = new Pseudo();
-    test.enqueue("A");
-    test.enqueue("B");
-    test.enqueue("R");
-    test.dequeue();
-    test.enqueue("s");
-    test.dequeue();
-    test.dequeue();
-    System.out.println(test.toString());
+//    test.enqueue("A");
+//    test.enqueue("B");
+//    test.enqueue("R");
+//    test.dequeue();
+//    test.enqueue("s");
+//    test.dequeue();
+//    test.dequeue();
+//    System.out.println(test.toString());
 
-  }
+AnimalShelter animalShelter=new AnimalShelter();
+    animalShelter.dequeue("DOG");
+    animalShelter.dequeue("CAT");
+    animalShelter.dequeue("COG");
+    animalShelter.dequeue("DOG");
+    System.out.println(animalShelter.dequeue("DOG"));
+    System.out.println(animalShelter.peek());
+    }
 
   private static void stackDemo() {
     Stack stack = new Stack();
@@ -65,6 +72,9 @@ public class App {
     System.out.println(queue.dequeue());
     System.out.println(queue.dequeue());
     System.out.println(queue.dequeue());
+
+
   }
+
 
 }

@@ -28,15 +28,15 @@ public class Pseudo {
 
     }
   }
-
-  public String dequeue(){
-    if (stack1.isEmpty()){
-      throw new IllegalArgumentException("Empty");
-    }
-    String string = stack1.peek();
-    stack1.pop();
-    return string;
-  }
+//
+//  public String dequeue(){
+//    if (stack1.isEmpty()){
+//      throw new IllegalArgumentException("Empty");
+//    }
+//    String string = stack1.peek();
+//    stack1.pop();
+//    return string;
+//  }
 
   @Override
   public String toString() {
