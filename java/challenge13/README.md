@@ -16,3 +16,7 @@ Curly Brackets : {}
 
 time :O(n)
 space : O(n)
+
+## link of the repo
+
+[The Code](https://github.com/abrar189/data-structures-and-algorithms1/tree/stack-queue-brackets/java/stack_and_queue)
