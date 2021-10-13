@@ -11,21 +11,28 @@ public class App {
 
   public static void main(String[] args) throws Exception {
     System.out.println(new App().getGreeting());
-//    stackDemo();
-//    queueDemo();
+    stackDemo();
+    queueDemo();
 
+//
+//    Pseudo test = new Pseudo();
+//    test.enqueue("A");
+//    test.enqueue("B");
+//    test.enqueue("R");
+//    test.dequeue();
+//    test.enqueue("s");
+//    test.dequeue();
+//    test.dequeue();
+//    System.out.println(test.toString());
 
-    Pseudo test = new Pseudo();
-    test.enqueue("A");
-    test.enqueue("B");
-    test.enqueue("R");
-    test.dequeue();
-    test.enqueue("s");
-    test.dequeue();
-    test.dequeue();
-    System.out.println(test.toString());
-
-  }
+//AnimalShelter animalShelter=new AnimalShelter();
+//    animalShelter.dequeue("DOG");
+//    animalShelter.dequeue("CAT");
+//    animalShelter.dequeue("COG");
+//    animalShelter.dequeue("DOG");
+//    System.out.println(animalShelter.dequeue("DOG"));
+//    System.out.println(animalShelter.peek());
+    }
 
   private static void stackDemo() {
     Stack stack = new Stack();
@@ -65,6 +72,10 @@ public class App {
     System.out.println(queue.dequeue());
     System.out.println(queue.dequeue());
     System.out.println(queue.dequeue());
+
+    StackBracket BracketsStack = new StackBracket();
+    System.out.println(BracketsStack.ValidateBrackets("({})]]"));
   }
+
 
 }

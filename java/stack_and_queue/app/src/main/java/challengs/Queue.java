@@ -1,40 +1,52 @@
 package challengs;
 
-public class Queue {
+public class Queue<T> {
 
-  public Node front;
-  public Node rear;
+  public Node<T> front;
+  public Node<T> rear;
+  private Node<T> top;
+
+  public Node<T> getTop() {
+    return top;
+  }
+
+  public void setTop(Node<T> top) {
+    this.top = top;
+  }
 
   public Queue() {
   }
 
-  public void enqueue(String data) {
+  public void enqueue(T data) {
     if (isEmpty()) {
-      Node node = new Node(data);
+      Node<T> node = new Node<>(data);
       front = node;
       rear = node;
     } else {
-      Node node = new Node(data);
+      Node<T> node = new Node<>(data);
       rear.setNext(node);
       rear = node;
     }
   }
 
-  public String dequeue() {
+  public T dequeue() {
+    T data;
     if (isEmpty()) {
-      return "Queue is empty";
+      return (T) "Queue is empty";
     } else {
-      String data = front.getData();
+       data = (T) front.getData();
       front = front.getNext();
       return data;
     }
   }
 
-  public String peek() {
-    return front.getData();
+  public T peek() {
+    return (T) front.getData();
   }
 
   public boolean isEmpty() {
     return front == null;
   }
+
+
 }
