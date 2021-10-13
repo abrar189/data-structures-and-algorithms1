@@ -108,4 +108,16 @@ class AppTest {
 
 
   }
+
+  @Test
+  public void ValidateBracketsTest() {
+
+    StackBracket data2 =new StackBracket();
+
+    assertFalse( data2.ValidateBrackets("[(}))"), "false");
+    assertTrue(data2.ValidateBrackets("()[]()"), "true");
+
+  }
+
+
 }

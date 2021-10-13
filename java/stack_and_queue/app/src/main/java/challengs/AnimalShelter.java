@@ -1,7 +1,7 @@
 package challengs;
 
 public class AnimalShelter<T> {
-  protected Node<T> front;
+  protected Node <T> front;
   protected Node<T> rear;
 
 
@@ -11,7 +11,7 @@ public class AnimalShelter<T> {
   }
 
   public void enqueue(T value) {
-    Node newNode = new Node(value);
+    Node<T> newNode = new Node<>(value);
     if (this.front == null) {
       this.front = newNode;
       this.rear = newNode;
@@ -21,9 +21,9 @@ public class AnimalShelter<T> {
     }
   }
 
-  public T dequeue(T animalType) {
-    Node previous = this.front;
-    Node current = this.front;
+  public Object dequeue(T animalType) {
+    Node<T> previous = this.front;
+    Node<T> current = this.front;
     while (current != null) {
       if (current.data.toString() == animalType) {
         if (current == previous && current.next == null) {
@@ -37,7 +37,7 @@ public class AnimalShelter<T> {
         if (current != previous) {
           previous.next = previous.next.next;
         }
-        return (T) current.data;
+        return  current.data;
       }
       if (previous != current) {
         previous = previous.next;
