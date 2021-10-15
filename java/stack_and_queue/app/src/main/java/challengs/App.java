@@ -11,8 +11,17 @@ public class App {
 
   public static void main(String[] args) throws Exception {
     System.out.println(new App().getGreeting());
-    stackDemo();
-    queueDemo();
+//    stackDemo();
+//    queueDemo();
+
+    Stack stack = new Stack();
+
+    stack.push(11);
+    stack.push(3);
+    stack.push(0);
+    stack.push(20);
+
+    System.out.println(max(stack));
 
 //
 //    Pseudo test = new Pseudo();
@@ -33,6 +42,22 @@ public class App {
 //    System.out.println(animalShelter.dequeue("DOG"));
 //    System.out.println(animalShelter.peek());
     }
+  public static Integer max(Stack stack) {
+    if (stack.isEmpty()) {
+      return 0;
+    }
+    else {
+      Integer last = (Integer)stack.pop();
+      Integer next = max(stack);
+      stack.push(last);
+      if (last > next) {
+        return last;
+      }
+      else {
+        return next;
+      }
+    }
+  }
 
   private static void stackDemo() {
     Stack stack = new Stack();
