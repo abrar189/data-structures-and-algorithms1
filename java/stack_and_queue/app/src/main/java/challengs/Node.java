@@ -10,7 +10,7 @@ public class Node<T> {
   }
 
   public T getData() {
-    return data;
+    return (T) data;
   }
 
   public void setData(T data) {

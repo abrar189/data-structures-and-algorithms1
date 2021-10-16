@@ -11,11 +11,11 @@ public class App {
 
   public static void main(String[] args) throws Exception {
     System.out.println(new App().getGreeting());
-//    stackDemo();
-//    queueDemo();
+    stackDemo();
+    queueDemo();
 
-
-    Pseudo test = new Pseudo();
+//
+//    Pseudo test = new Pseudo();
 //    test.enqueue("A");
 //    test.enqueue("B");
 //    test.enqueue("R");
@@ -24,6 +24,7 @@ public class App {
 //    test.dequeue();
 //    test.dequeue();
 //    System.out.println(test.toString());
+
     System.out.println("----- Animal Shelter -----");
     Animals sozy=new Animals("dog");
     Animals meme=new Animals("cat");
@@ -39,6 +40,9 @@ public class App {
     System.out.println(animalShelter.peek());
     System.out.println(animalShelter.dequeue("cat"));
 //
+
+
+
     }
 
   private static void stackDemo() {
@@ -80,7 +84,8 @@ public class App {
     System.out.println(queue.dequeue());
     System.out.println(queue.dequeue());
 
-
+    StackBracket BracketsStack = new StackBracket();
+    System.out.println(BracketsStack.ValidateBrackets("({})]]"));
   }
 
 

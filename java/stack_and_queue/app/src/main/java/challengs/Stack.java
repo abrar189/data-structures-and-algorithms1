@@ -1,6 +1,6 @@
 package challengs;
 
-public class Stack<T> {
+public class Stack< T>{
   private Node<T> top;
 
   public Node<T> getTop() {
