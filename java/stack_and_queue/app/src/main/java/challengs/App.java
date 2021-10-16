@@ -25,13 +25,24 @@ public class App {
 //    test.dequeue();
 //    System.out.println(test.toString());
 
-//AnimalShelter animalShelter=new AnimalShelter();
-//    animalShelter.dequeue("DOG");
-//    animalShelter.dequeue("CAT");
-//    animalShelter.dequeue("COG");
-//    animalShelter.dequeue("DOG");
-//    System.out.println(animalShelter.dequeue("DOG"));
-//    System.out.println(animalShelter.peek());
+    System.out.println("----- Animal Shelter -----");
+    Animals sozy=new Animals("dog");
+    Animals meme=new Animals("cat");
+    Animals popy=new Animals("dog");
+
+    AnimalShelter animalShelter=new AnimalShelter();
+    animalShelter.enqueue(sozy);
+    animalShelter.enqueue(meme);
+    animalShelter.enqueue(popy);
+
+//    System.out.println(animalShelter.dequeue("dog"));
+//    System.out.println(animalShelter.dequeue("cat"));
+    System.out.println(animalShelter.peek());
+    System.out.println(animalShelter.dequeue("cat"));
+//
+
+
+
     }
 
   private static void stackDemo() {

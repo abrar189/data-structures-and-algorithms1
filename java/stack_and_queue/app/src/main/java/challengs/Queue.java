@@ -48,5 +48,26 @@ public class Queue<T> {
     return front == null;
   }
 
+  public Node<T> getFront() {
+    return front;
+  }
 
+  public void setFront(Node<T> front) {
+    this.front = front;
+  }
+
+  public Node<T> getRear() {
+    return rear;
+  }
+
+  public void setRear(Node<T> rear) {
+    this.rear = rear;
+  }
+
+  @Override
+  public String toString() {
+    return "Queue{" +
+      ", top=" + top +
+      '}';
+  }
 }
