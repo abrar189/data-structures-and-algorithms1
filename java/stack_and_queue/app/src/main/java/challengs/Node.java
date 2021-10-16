@@ -1,8 +1,8 @@
 package challengs;
 
 public class Node<T> {
-  T data;
-  Node<T> next;
+  public T data;
+  public Node<T> next;
 
 
   public Node(T data) {
@@ -23,13 +23,6 @@ public class Node<T> {
 
   public void setNext(Node<T> next) {
     this.next = next;
-  }
-
-  @Override
-  public String toString() {
-    return "Node{" +
-      "data='" + data + '\'' +
-      '}';
   }
 
 

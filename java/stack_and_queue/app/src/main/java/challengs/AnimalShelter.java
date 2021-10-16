@@ -1,6 +1,8 @@
 package challengs;
 
-public class AnimalShelter<T> {
+
+public class AnimalShelter<T> extends Queue<T> {
+
   protected Node<T> front;
   protected Node<T> rear;
 
@@ -21,7 +23,7 @@ public class AnimalShelter<T> {
     }
   }
 
-  public T dequeue(T animalType) {
+  public T dequeue(String animalType) {
     Node previous = this.front;
     Node current = this.front;
     while (current != null) {
@@ -50,4 +52,5 @@ public class AnimalShelter<T> {
   public T peek() {
     return this.front != null ? this.front.data : null;
   }
+
 }
