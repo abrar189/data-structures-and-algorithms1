@@ -18,16 +18,18 @@ public class App {
       binarySearchTree.insert(10);
       binarySearchTree.insert(3);
       binarySearchTree.insert(8);
+//
+//      System.out.println("Inorder");
+//      binarySearchTree.inorderTraversal();
+//
+//      System.out.println("\n----------Preorder ----------");
+//      binarySearchTree.preorderTraversal();
+//      System.out.println("\n---------- Postorder ---------");
+//      binarySearchTree.postorderTraversal();
+//      System.out.println("\n");
+//      System.out.println(binarySearchTree.contains(10));
 
-      System.out.println("Inorder");
-      binarySearchTree.inorderTraversal();
-
-      System.out.println("\n----------Preorder ----------");
-      binarySearchTree.preorderTraversal();
-      System.out.println("\n---------- Postorder ---------");
-      binarySearchTree.postorderTraversal();
-      System.out.println("\n");
-      System.out.println(binarySearchTree.contains(10));
+      System.out.println(binarySearchTree.findMaxValue());
     }
 
 }

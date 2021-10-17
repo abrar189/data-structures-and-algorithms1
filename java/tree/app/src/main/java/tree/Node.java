@@ -40,5 +40,12 @@ public class Node<T>{
     this.rightChild = rightChild;
   }
 
-
+  @Override
+  public String toString() {
+    return "Node{" +
+      "value=" + value +
+      ", leftChild=" + leftChild +
+      ", rightChild=" + rightChild +
+      '}';
+  }
 }

@@ -14,7 +14,6 @@ public class App {
     stackDemo();
     queueDemo();
 
-//
 //    Pseudo test = new Pseudo();
 //    test.enqueue("A");
 //    test.enqueue("B");
@@ -24,6 +23,7 @@ public class App {
 //    test.dequeue();
 //    test.dequeue();
 //    System.out.println(test.toString());
+
 
     System.out.println("----- Animal Shelter -----");
     Animals sozy=new Animals("dog");
@@ -36,9 +36,8 @@ public class App {
     animalShelter.enqueue(popy);
 
 //    System.out.println(animalShelter.dequeue("dog"));
+
 //    System.out.println(animalShelter.dequeue("cat"));
-    System.out.println(animalShelter.peek());
-    System.out.println(animalShelter.dequeue("cat"));
 //
 
 

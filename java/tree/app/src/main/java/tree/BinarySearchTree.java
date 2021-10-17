@@ -18,7 +18,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
     traverseInorder(root);
   }
 
-  private void traverseInorder(Node<T> root) {
+  public void traverseInorder(Node<T> root) {
     if (root.getLeftChild() != null) {
       traverseInorder(root.getLeftChild());
     }
@@ -97,4 +97,18 @@ public class BinarySearchTree<T extends Comparable<T>> {
   public boolean isEmpty() {
     return root == null;
   }
+
+  public Integer findMaxValue() {
+
+    return maxValue(root);
+  }
+
+  public Integer maxValue(Node<T> node ) {
+
+    if(node.getRightChild() != null) {
+      return maxValue(node.getRightChild());
+    }
+    return (Integer) node.getValue();
+  }
+
 }
