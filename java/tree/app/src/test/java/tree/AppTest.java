@@ -15,7 +15,7 @@ class AppTest {
 
   @Test
   void testTreeMax() {
-    System.out.println("test 8 pass");
+   
     Node<Integer> node4 = new Node(70);
     Node<Integer> node5 = new Node(95);
     Node<Integer> node6 = new Node(110);
