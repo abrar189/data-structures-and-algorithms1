@@ -15,7 +15,7 @@ public class App {
 //    queueDemo();
 
 
-    Pseudo test = new Pseudo();
+//    Pseudo test = new Pseudo();
 //    test.enqueue("A");
 //    test.enqueue("B");
 //    test.enqueue("R");
@@ -24,20 +24,20 @@ public class App {
 //    test.dequeue();
 //    test.dequeue();
 //    System.out.println(test.toString());
-    System.out.println("----- Animal Shelter -----");
-    Animals sozy=new Animals("dog");
-    Animals meme=new Animals("cat");
-    Animals popy=new Animals("dog");
-
-    AnimalShelter animalShelter=new AnimalShelter();
-    animalShelter.enqueue(sozy);
-    animalShelter.enqueue(meme);
-    animalShelter.enqueue(popy);
-
-//    System.out.println(animalShelter.dequeue("dog"));
+//    System.out.println("----- Animal Shelter -----");
+//    Animals sozy=new Animals("dog");
+//    Animals meme=new Animals("cat");
+//    Animals popy=new Animals("dog");
+//
+//    AnimalShelter animalShelter=new AnimalShelter();
+//    animalShelter.enqueue(sozy);
+//    animalShelter.enqueue(meme);
+//    animalShelter.enqueue(popy);
+//
+////    System.out.println(animalShelter.dequeue("dog"));
+////    System.out.println(animalShelter.dequeue("cat"));
+//    System.out.println(animalShelter.peek());
 //    System.out.println(animalShelter.dequeue("cat"));
-    System.out.println(animalShelter.peek());
-    System.out.println(animalShelter.dequeue("cat"));
 //
     }
 

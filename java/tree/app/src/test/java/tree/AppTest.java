@@ -13,4 +13,19 @@ class AppTest {
     }
 
 
+  @Test
+  void testTreeMax() {
+    System.out.println("test 8 pass");
+    Node<Integer> node4 = new Node(70);
+    Node<Integer> node5 = new Node(95);
+    Node<Integer> node6 = new Node(110);
+
+    Node<Integer> node2 = new Node(90, node4, node5);
+    Node<Integer> node3 = new Node(120, node6, null);
+
+    Node<Integer> root = new Node(100, node2, node3);
+    BinarySearchTree binaryTree=new BinarySearchTree();
+
+    assertEquals(120,binaryTree.maxValue(root));
+  }
 }
