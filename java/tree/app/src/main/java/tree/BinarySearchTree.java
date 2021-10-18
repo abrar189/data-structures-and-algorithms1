@@ -1,7 +1,11 @@
 package tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BinarySearchTree<T extends Comparable<T>> {
   private Node<T> root;
+
 
   public  void insert(T data) {
     if (isEmpty()) {
@@ -110,5 +114,10 @@ public class BinarySearchTree<T extends Comparable<T>> {
     }
     return (Integer) node.getValue();
   }
+  public Integer findbreadthFirstTree() {
+
+    return maxValue(root);
+  }
+
 
 }

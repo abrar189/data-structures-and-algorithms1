@@ -4,6 +4,8 @@ package tree;
 
 public class Node<T>{
   public T value;
+  public Node next;
+
   public Node<T> leftChild;
   public Node<T> rightChild;
 

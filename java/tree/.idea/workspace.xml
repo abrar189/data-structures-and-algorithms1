@@ -5,6 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="294ae769-c6b7-4818-a81a-b368ea5eca6a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tree/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tree/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tree/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tree/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tree/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tree/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/tree/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/tree/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest.testTreeMax">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tree.App" />
       <module name="tree.app.main" />
@@ -119,8 +126,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppTest.testTreeMax" />
         <item itemvalue="Gradle.AppTest.testBreadthFirstTraverse" />
+        <item itemvalue="Gradle.AppTest.testTreeMax" />
         <item itemvalue="Gradle.AppTest.inOrderPreOrderPostOrderTraversalNonEmptyTest" />
         <item itemvalue="Application.App" />
       </list>
@@ -147,5 +154,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
