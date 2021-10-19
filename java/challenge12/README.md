@@ -10,4 +10,4 @@ doing a Animal Shelter that have enqueue and dequeue methods to work with cat an
  time : O(n) scape : O(n)
 
 
-[code link](../img/ch12.PNG)
+[code link](https://github.com/abrar189/data-structures-and-algorithms1/blob/stack-queue-animal-shelter/java/stack_and_queue/app/src/main/java/challengs/AnimalShelter.java)
