@@ -3,6 +3,9 @@ package tree;
 import java.util.ArrayList;
 
 public class BinaryTree<T> {
+  private int element ;
+
+
 
   ArrayList <Object> breadthFirstArr=new ArrayList<>();
 
@@ -24,5 +27,22 @@ public class BinaryTree<T> {
     }
     else return null;
   }
+
+
+
+  public int getSumOdd(Node<Integer> node) {
+    int sum = 0;
+    if (node != null) {
+      if (node.getValue() % 2 != 0) {
+        sum += node.getValue();
+      }
+      sum += getSumOdd(node.getLeftChild());
+      sum += getSumOdd(node.getRightChild());
+    }
+    return sum;
+  }
+
+
+
 
 }

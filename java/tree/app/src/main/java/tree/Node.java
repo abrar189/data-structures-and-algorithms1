@@ -6,8 +6,12 @@ public class Node<T>{
   public T value;
   public Node next;
 
+
   public Node<T> leftChild;
   public Node<T> rightChild;
+  public int key;
+
+//  public int element;
 
   public Node(T value, Node leftChild, Node rightChild) {
     this.value = value;

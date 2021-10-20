@@ -18,6 +18,15 @@ public class App {
       binarySearchTree.insert(10);
       binarySearchTree.insert(3);
       binarySearchTree.insert(8);
+      BinarySearchTree<Integer> binarySearchTree1=new BinarySearchTree<>();
+      binarySearchTree1.insert(20);
+      binarySearchTree1.insert(2);
+      binarySearchTree1.insert(30);
+      binarySearchTree1.insert(5);
+      binarySearchTree1.insert(3);
+      binarySearchTree1.insert(4);
+      binarySearchTree1.insert(7);
+      binarySearchTree1.insert(9);
 //
 //      System.out.println("Inorder");
 //      binarySearchTree.inorderTraversal();
@@ -42,6 +51,13 @@ public class App {
 
       System.out.println("--------- breadth first --------");
       System.out.println(binaryTree.breadthFirst(root));
+
+      System.out.println(binaryTree.getSumOdd(root));
+
+      System.out.println("---------------Compare Directories Files Num----------------");
+
+      System.out.println(binarySearchTree.CompareDirectoriesFiles(binarySearchTree,binarySearchTree1));
+
     }
 
 }
