@@ -14,4 +14,4 @@ if the node divisble by 5 and 3  we return FizzBuzz
 the approach that I've used in this challenge the foreach loop With complexity : time > O(n) , space > O(n)
 
 
-[CODE_LINK](https://github.com/abrar189/data-structures-and-algorithms1/blob/tree-breadth-first/java/tree/app/src/main/java/tree/BinaryTree.java)
+[CODE_LINK](https://github.com/abrar189/data-structures-and-algorithms1/blob/tree-fizz-buzz/java/tree/app/src/main/java/tree/KTree.java)
