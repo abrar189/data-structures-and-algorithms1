@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="294ae769-c6b7-4818-a81a-b368ea5eca6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tree/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tree/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tree/KTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tree/NodeK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/tree/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tree/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tree/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tree/BinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tree/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/tree/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/tree/AppTest.java" afterDir="false" />
     </list>
@@ -45,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../codefellowship" />
   </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -103,6 +103,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="AppTest.testFizzBuzz" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;tree.AppTest.testFizzBuzz&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="AppTest.testTreeMax" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -126,6 +147,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest.testFizzBuzz" />
         <item itemvalue="Gradle.AppTest.testBreadthFirstTraverse" />
         <item itemvalue="Gradle.AppTest.testTreeMax" />
         <item itemvalue="Gradle.AppTest.inOrderPreOrderPostOrderTraversalNonEmptyTest" />

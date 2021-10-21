@@ -4,8 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BinarySearchTree<T extends Comparable<T>> {
-  private Node<T> root;
+  public Node<T> root;
 
+  public BinarySearchTree(Node<T> root) {
+    this.root = root;
+  }
+
+  public BinarySearchTree() {
+
+  }
+
+  public Node<T> getRoot() {
+    return root;
+  }
+
+  public void setRoot(Node<T> root) {
+    this.root = root;
+  }
 
   public  void insert(T data) {
     if (isEmpty()) {
@@ -118,6 +133,24 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
     return maxValue(root);
   }
+
+  private int filesSum(Node node) {
+    int count, numLeft, numRight;
+    if (node == null)
+      return 0;
+    if (node.getLeftChild() == null && node.getRightChild() == null)
+      return 1;
+    else
+      numLeft = filesSum(node.getLeftChild());
+      numRight = filesSum(node.getRightChild());
+      count = numLeft + numRight;
+      return count;    }
+
+  public boolean CompareDirectoriesFiles(BinarySearchTree tree1, BinarySearchTree tree2) {
+    int count = filesSum(tree1.getRoot()) + filesSum(tree2.getRoot());
+    return count % 2 == 0;
+  }
+
 
 
 }

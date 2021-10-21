@@ -3,6 +3,8 @@
  */
 package tree;
 
+import java.util.List;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -18,6 +20,15 @@ public class App {
       binarySearchTree.insert(10);
       binarySearchTree.insert(3);
       binarySearchTree.insert(8);
+      BinarySearchTree<Integer> binarySearchTree1=new BinarySearchTree<>();
+      binarySearchTree1.insert(20);
+      binarySearchTree1.insert(2);
+      binarySearchTree1.insert(30);
+      binarySearchTree1.insert(5);
+      binarySearchTree1.insert(3);
+      binarySearchTree1.insert(4);
+      binarySearchTree1.insert(7);
+      binarySearchTree1.insert(9);
 //
 //      System.out.println("Inorder");
 //      binarySearchTree.inorderTraversal();
@@ -29,19 +40,52 @@ public class App {
 //      System.out.println("\n");
 //      System.out.println(binarySearchTree.contains(10));
 
-      System.out.println(binarySearchTree.findMaxValue());
-      Node<Integer> node4 = new Node(7);
-      Node<Integer> node5 = new Node(8);
-      Node<Integer> node6 = new Node(11);
+//      System.out.println(binarySearchTree.findMaxValue());
+//      Node<Integer> node4 = new Node(7);
+//      Node<Integer> node5 = new Node(8);
+//      Node<Integer> node6 = new Node(11);
+//
+//      Node<Integer> node2 = new Node(9, node4, node5);
+//      Node<Integer> node3 = new Node(12, node6, null);
+//
+//      Node<Integer>  root = new Node(10, node2, node3);
+//      BinaryTree binaryTree = new BinaryTree();
 
-      Node<Integer> node2 = new Node(9, node4, node5);
-      Node<Integer> node3 = new Node(12, node6, null);
+//      System.out.println("--------- breadth first --------");
+//      System.out.println(binaryTree.breadthFirst(root));
+//
+//      System.out.println(binaryTree.getSumOdd(root));
 
-      Node<Integer> root = new Node(10, node2, node3);
-      BinaryTree binaryTree = new BinaryTree();
+//      System.out.println("---------------Compare Directories Files Num----------------");
 
-      System.out.println("--------- breadth first --------");
-      System.out.println(binaryTree.breadthFirst(root));
+//      System.out.println(binarySearchTree.CompareDirectoriesFiles(binarySearchTree,binarySearchTree1));
+//      BinarySearchTree tr = new BinarySearchTree();
+//      tr.root=new Node(5);
+//      tr.root.leftChild=new Node(15);
+//      tr.root.rightChild=new Node(4);
+//      tr.root.leftChild.leftChild=new Node(9);
+//
+//      BinarySearchTree res = BinaryTree.fizzBuzz( tr,tr.root);
+//      System.out.println(res);
+
+      System.out.println("_______________ FIZZ BUZZ ________");
+      KTree ktree = new KTree();
+      NodeK root = new NodeK("1");
+      NodeK node1 = new NodeK("990");
+      NodeK node2 = new NodeK("20");
+      NodeK node3 = new NodeK("65");
+      NodeK node4 = new NodeK("7");
+      NodeK node5 = new NodeK("555");
+      NodeK node6 = new NodeK("6");
+
+      ktree.root = root;
+      root.children.add(node1);
+      root.children.add(node2);
+      node1.children.add(node3);
+      node2.children.add(node4);
+      node2.children.add(node5);
+      node2.children.add(node6);
+      System.out.println(ktree.fizzBuzz(root));
     }
 
 }

@@ -1,13 +1,22 @@
 package tree;
 
 
+import com.google.common.cache.AbstractCache;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Node<T>{
   public T value;
   public Node next;
 
+
   public Node<T> leftChild;
   public Node<T> rightChild;
+  public int key;
+  public List<Node> child = new ArrayList<>();
+
+//  public int element;
 
   public Node(T value, Node leftChild, Node rightChild) {
     this.value = value;
