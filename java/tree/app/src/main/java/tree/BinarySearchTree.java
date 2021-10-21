@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BinarySearchTree<T extends Comparable<T>> {
-  private Node<T> root;
+  public Node<T> root;
 
   public BinarySearchTree(Node<T> root) {
     this.root = root;
@@ -150,4 +150,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
     int count = filesSum(tree1.getRoot()) + filesSum(tree2.getRoot());
     return count % 2 == 0;
   }
+
+
+
 }

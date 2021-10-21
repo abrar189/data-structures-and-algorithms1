@@ -1,6 +1,10 @@
 package tree;
 
 
+import com.google.common.cache.AbstractCache;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Node<T>{
   public T value;
@@ -10,6 +14,7 @@ public class Node<T>{
   public Node<T> leftChild;
   public Node<T> rightChild;
   public int key;
+  public List<Node> child = new ArrayList<>();
 
 //  public int element;
 
