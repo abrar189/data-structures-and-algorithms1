@@ -86,3 +86,13 @@ will compare the 15 with 42, when it's less, will assign it equal to 42 and minu
 
 ![image](img/step5.png)
 
+
+## Efficency
+
+Time: O(n^2):
+
+The basic operation of this algorithm is comparison. This will happen n*(n-1) number of times…concluding the algorithm to be n squared.
+
+Space: O(1):
+
+No additional space is being created. This array is being sorted in place…keeping the space at constant O(1).
