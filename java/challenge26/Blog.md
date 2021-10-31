@@ -35,7 +35,7 @@ will compare the 4 with 8, when it's less than 8, will assign it equal to 8 and 
 then assign arr[j+1] the value of temp which is 4.
 
 
-![image](img/step1.png)
+![image](img/step1.PNG)
 
 
 Pass 2:
@@ -76,7 +76,7 @@ temp=16;
 will compare the 16 with 42, when it's less, will assign it equal to 42 and minus 1 from j to become 2, then compare again 16 is less than 23, so will assign the value of arr[j+1] to be equal 23. then compare again 16 is grater than 8 so will break the loop and assign the value of arr[j+1] to be equal the temp which is 16.
 
 
-![image](img/step4.png)
+![image](img/step4.PNG)
 
 
 Pass 5:
@@ -88,7 +88,7 @@ temp=15;
 will compare the 15 with 42, when it's less, will assign it equal to 42 and minus 1 from j to become 2, then compare again 15 is less than 23, so will assign the value of arr[j+1] to be equal 23, then compare again 15 is less than 16, so will assign the value of arr[j+1] to be equal 16. then compare again 15 is grater than 8 so will break the loop and assign the value of arr[j+1] to be equal the temp which is 15.
 
 
-![image](img/step5.png)
+![image](img/step5.PNG)
 
 
 ## Efficency
