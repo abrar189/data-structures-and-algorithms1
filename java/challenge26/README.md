@@ -37,4 +37,4 @@ Time: nlog(n)
 
 Space: O(n)
 
-[Blog of challenge](https://github.com/abrar189/data-structures-and-algorithms1/blob/challenge26/java/challenge26/Blog.md)
+[Blog of challenge](https://github.com/abrar189/data-structures-and-algorithms1/blob/challenge27/java/challenge26/Blog27.md)
