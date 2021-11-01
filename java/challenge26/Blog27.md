@@ -51,10 +51,13 @@ Sample Array: [8,4,23,42,16,15]
 will declare n equal to arr.length and if it grater than 1 will divide the array and assign it in the new 2 arrays.
 
 ==> [8,4,23,42,16,15]
+
 n=arr.length=6
+
 mid=n/2=3
 
 left arr => [8,4,23]
+
 Right arr => [42,16,15]
 
 ### steps for left side:
@@ -64,7 +67,9 @@ Right arr => [42,16,15]
 will recall the function in the left side of the array [8,4,23],divide it to also left and right.
 
 lef arr =[8,4,23]
+
 n=arr.length=3
+
 mid=n/2=1
 
 left => [8]
@@ -73,7 +78,9 @@ Right => [4,23]
 than recall the the function in the left side of it [8]. and because it length is not grater than 1 will move to next step.
 
 left arr =[8]
+
 n=arr.length=1
+
 n>1
 
 - step 3: 
@@ -81,7 +88,9 @@ n>1
 will recall the function in the right side of the array [4,23]. and because it length is grater than 1 will divide it to left [4] and right [23], then call the function for the left [4] array and because it length is not grater than 1 will move to next step. and call the function for the right [23] array.and because it length is not grater than 1 will move to next step.
 
 right arr =[4,23]
+
 n=arr.length=2
+
 mid=n/2=1
 
 left =[4]
@@ -99,22 +108,35 @@ arr =[4,23]
 
 left =[4]
 right=[23]
+
 while loop --> 4<23
+
 i=0
+
 arr[0]=4
+
 i=1 !<left.length ==> stop loop
+
 arr[1]=23
+
 ==> arr=[4,23]
 
 arr=[8,4,23]
+
 left=[8]
 right=[4,23]
+
 while loop --> 4< 8 -->arr[0]=4
+
 j++
 k++
+
 while loop --> 8< 23 -->arr[1]=8
+
 i++ --> i!<left.length ==> stop loop
+
 arr[2]=23
+
 arr=[4,8,23]
 
 ### steps for right side :
@@ -124,8 +146,11 @@ arr=[4,8,23]
 will recall the function in the right side of the array [42, 16, 15],divide it to also left and right.
 
 arr=[42,16,15]
+
 n=arr.length=3
+
 mide=n/2=1
+
 left => [42]
 Right => [16,15]
 
@@ -136,7 +161,9 @@ than recall the the function in the left side of it [42]. and because it length 
 will recall the function in the right side of the array [16,15]. and because it length is grater than 1 will divide it to left [16] and right [15], then call the function for the left [16] array and because it length is not grater than 1 will move to next step. and call the function for the right [15] array.and because it length is not grater than 1 will move to next step.
 
 Right => [16,15]
+
 n=arr.length=2
+
 mide=n/2=1
 
 left=[16]
@@ -155,21 +182,33 @@ arr =[16,15]
 
 left =[16]
 right=[15]
+
 while loop --> 15<16
+
 i=0
+
 arr[0]=15
+
 j++ !<right.length ==> stop loop
+
 arr[1]=16
+
 ==> arr=[15,16]
 
 arr=[42,15,16]
+
 left=[42]
 right=[15,16]
+
 while loop --> 15< 42 -->arr[0]=15
+
 j++
 k++
+
 while loop --> 16< 42 -->arr[1]=16
+
 j++ --> j!<left.length ==> stop loop
+
 arr[2]=42
 arr=[15,16,42]
 
