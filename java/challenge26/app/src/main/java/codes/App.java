@@ -16,6 +16,8 @@ public class App {
       int [] arr={8,4,7,18,30,15};
 //      System.out.println(Arrays.toString(SortArray(arr)));
 //      System.out.println(Arrays.toString(mergeSort(arr)));
+      System.out.println(Arrays.toString(QuickSort.quickSort(arr,0, arr.length-1 )));
+
 
     }
 
