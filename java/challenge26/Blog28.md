@@ -83,10 +83,10 @@ we will get the sorted array, return it.
 
 ## Efficency
 
-- Time: log(n):
+- Time: nlog(n)
 
 The best case occurs when the partition process always picks the middle element as pivot.
 
-- Space: O(1):
+- Space: O(1)
 
 No additional space is being created.
