@@ -60,21 +60,21 @@ class AppTest {
     String expected = "{1}{2}{3}{1000}NULL";
     assertEquals(expected, list.toString());
   }
-  @Test
-  void testZip() {
-    LinkedList list1 = new LinkedList();
-    list1.append1(9);
-    list1.append1(8);
-    list1.append1(7);
-    list1.append1(6);
-    LinkedList list2 = new LinkedList();
-    list2.append1(1);
-    list2.append1(2);
-    list2.append1(3);
-    LinkedList zippedList=new LinkedList();
-    zippedList.head=zippedList.zipLists(list1,list2);
-    assertEquals("{9}{1}{8}{2}{7}{3}{6}NULL",zippedList.toString());
-  }
+//  @Test
+//  void testZip() {
+//    LinkedList list1 = new LinkedList();
+//    list1.append1(9);
+//    list1.append1(8);
+//    list1.append1(7);
+//    list1.append1(6);
+//    LinkedList list2 = new LinkedList();
+//    list2.append1(1);
+//    list2.append1(2);
+//    list2.append1(3);
+//    LinkedList zippedList=new LinkedList();
+//    zippedList.head=zippedList.zipLists(list1,list2);
+//    assertEquals("{9}{1}{8}{2}{7}{3}{6}NULL",zippedList.toString());
+//  }
 }
 
 
