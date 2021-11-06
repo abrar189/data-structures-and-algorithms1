@@ -77,7 +77,7 @@ Quick sort for Right p=0//L=0//R=1
 
 will call the quick sort method using position and right value, call the pertition and find the new position, then call quick sort first with position and left value, then with position and right value.
 
-![image](img/ch28c.png)
+![image](img/ch28d.png)
 
 we will get the sorted array, return it.
 
