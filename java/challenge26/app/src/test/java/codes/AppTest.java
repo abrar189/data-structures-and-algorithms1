@@ -32,7 +32,7 @@ class AppTest {
     assertEquals(Arrays.toString(res), Arrays.toString(MergeSort.mergeSort(arr)));
   }
   @Test
-  void quichSort(){
+  void quickSort(){
     QuickSort sort = new QuickSort();
     int[] arr = {8,4,7,18,30,15};
     int[] res = {4,7,8,15,18,30};
