@@ -51,10 +51,11 @@ Space: O(n)
 
 ## Whiteboard Process
 
+![image](img/ch28.PNG)
 
 ## Approach & Efficiency
 
 - Time: nlog(n)
 - Space: O(1)
 
-[Blog of challenge](https://github.com/abrar189/data-structures-and-algorithms1/blob/challenge27/java/challenge26/Blog27.md)
+[Blog of challenge](https://github.com/abrar189/data-structures-and-algorithms1/blob/challenge28/java/challenge26/Blog28.md)
