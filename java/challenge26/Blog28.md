@@ -13,6 +13,7 @@ There are many different versions of quickSort that pick pivot in different ways
 
 ## Pseudocode
 
+```java
 ALGORITHM QuickSort(arr, left, right)
     if left < right
         // Partition the array by setting the position of the pivot value
@@ -43,7 +44,7 @@ ALGORITHM Swap(arr, i, low)
     temp <-- arr[i]
     arr[i] <-- arr[low]
     arr[low] <-- temp
-
+```
 
 ## Trace
 
