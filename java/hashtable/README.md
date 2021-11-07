@@ -32,3 +32,19 @@ but however it suffers from O(n) in the collisions cases.
 - Space: complexity of O(n).
 -
 [link of code](https://github.com/abrar189/data-structures-and-algorithms1/tree/hashtable/java/hashtable/app/src)
+
+# challenge 31 :
+
+
+## Challenge Summary
+
+write a method that take string and Find the first repeated word in the string
+
+## Whiteboard Process
+
+![image](./img/ch31.PNG)
+
+## Approach & Efficiency
+
+- time : O(n) because we have for loop  (we have n of elements)
+- space : O(n)  we make addition space for declare array

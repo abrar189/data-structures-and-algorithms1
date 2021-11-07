@@ -3,6 +3,7 @@ package challenge5;
 public class LinkedList {
 
   Node head;
+  private int size;
 
 
   public void insert(int data) {
@@ -115,12 +116,11 @@ public class LinkedList {
       current = current.next;
       counter++;
     }
-
     if (k > counter || k < 0) {
       return "Exception";
     } else {
       current = head;
-      for (int i = counter; i >= counter -k; i--) {
+      for (int i = 0; i <= counter -k; i++) {
         if (i == counter - k) {
           return "{" + current.value + "}";
         }
@@ -131,31 +131,58 @@ public class LinkedList {
   }
 
 
-  public Node zipLists(LinkedList list1, LinkedList list2) {
+//  public Node zipLists(LinkedList list1, LinkedList list2) {
+//
+//    if (list1.head == null) {
+//      return list2.head;
+//    } else if (list2.head == null) {
+//      return list1.head;
+//    } else {
+//      Node current1 = list1.head;
+//      Node current2 = list2.head;
+//      Node list1Next, list2Next;
+//
+//      while (current1 != null && current2 != null) {
+//
+//        list1Next = current1.next;
+//        list2Next = current2.next;
+//
+//        current2.next = list1Next;
+//        current1.next = current2;
+//
+//        current1 = list1Next;
+//        current2 = list2Next;
+//      }
+//      return list1.head;
+//    }
+//  }
 
-    if (list1.head == null) {
-      return list2.head;
-    } else if (list2.head == null) {
-      return list1.head;
-    } else {
-      Node current1 = list1.head;
-      Node current2 = list2.head;
-      Node list1Next, list2Next;
+  public  String mergeLists(LinkedList linkedList1, LinkedList linkedList2){
 
-      while (current1 != null && current2 != null) {
+    Node n1 = linkedList1.head;
+    Node n2 = linkedList2.head;
+    LinkedList zipLinkedList = new LinkedList();
+    int fullSize = linkedList1.size+ linkedList2.size;
 
-        list1Next = current1.next;
-        list2Next = current2.next;
+    while (fullSize > 0){
 
-        current2.next = list1Next;
-        current1.next = current2;
-
-        current1 = list1Next;
-        current2 = list2Next;
+      if(n1 != null){
+        zipLinkedList.insert(n1.getValue());
+        n1 = n1.getNext();
       }
-      return list1.head;
+
+      if(n2 != null){
+        zipLinkedList.insert(n2.getValue());
+        n2 = n2.getNext();
+      }
+
+      fullSize--;
+
     }
+    return zipLinkedList.toString();
   }
+
+
   public boolean isPalindrome() {
   Node current;
   current=head;
@@ -194,5 +221,7 @@ public class LinkedList {
     }
     return prev;
   }
+
+
 }
 

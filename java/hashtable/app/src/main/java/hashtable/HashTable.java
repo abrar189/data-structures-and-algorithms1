@@ -1,7 +1,6 @@
 package hashtable;
 
-import java.util.ArrayList;
-import java.util.Objects;
+import java.util.*;
 
 public class HashTable<K, V> {
 
@@ -103,4 +102,17 @@ public class HashTable<K, V> {
     }
     return false;
   }
+
+  public static String repeatedWord(String string) {
+    Map<String, String> hashMap = new HashMap<>();
+    String[] words = string.split(" ");
+
+    for (String word : words) {
+      word = word.toLowerCase();
+
+      if (hashMap.containsKey(word)) return word;
+      else hashMap.put(word, word);
+    }
+    return "NO REPEATED WORDS";
   }
+}

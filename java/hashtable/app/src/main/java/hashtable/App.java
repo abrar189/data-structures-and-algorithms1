@@ -25,11 +25,12 @@ public class App {
       stringIntegerHashTable.add("Qusai", 1500);
       stringIntegerHashTable.add("Deyaa", 10000);
 
-      System.out.println("The Integer is => " + stringIntegerHashTable.get("Jade"));
-      System.out.println("The index is => " + stringIntegerHashTable.hash("Morgan"));
-      System.out.println("Is contain ? => " + stringIntegerHashTable.contains("abrar"));
-      System.out.println("Is contain ? => " + stringIntegerHashTable.contains("Jason"));
+//      System.out.println("The Integer is => " + stringIntegerHashTable.get("Jade"));
+//      System.out.println("The index is => " + stringIntegerHashTable.hash("Morgan"));
+//      System.out.println("Is contain ? => " + stringIntegerHashTable.contains("abrar"));
+//      System.out.println("Is contain ? => " + stringIntegerHashTable.contains("Jason"));
 
+      System.out.println(HashTable.repeatedWord("Once upon a time,was there was a brave princess who"));
 
     }
 }
