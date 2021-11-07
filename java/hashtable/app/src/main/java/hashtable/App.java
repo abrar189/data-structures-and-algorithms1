@@ -30,7 +30,7 @@ public class App {
 //      System.out.println("Is contain ? => " + stringIntegerHashTable.contains("abrar"));
 //      System.out.println("Is contain ? => " + stringIntegerHashTable.contains("Jason"));
 
-      System.out.println(HashTable.repeatedWord("Once was upon a time,was there was a brave princess who"));
+      System.out.println(HashTable.repeatedWord("Once upon a time,was there was a brave princess who"));
 
     }
 }
