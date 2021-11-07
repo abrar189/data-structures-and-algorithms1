@@ -42,7 +42,7 @@ write a method that take string and Find the first repeated word in the string
 
 ## Whiteboard Process
 
-![image](../img/ch31.PNG)
+![image](./img/ch31.PNG)
 
 ## Approach & Efficiency
 
