@@ -105,8 +105,10 @@ public class HashTable<K, V> {
 
   public static String repeatedWord(String string) {
     Map<String, String> hashMap = new HashMap<>();
-    String[] words = string.split(" ");
-
+//    String[] words = string.split(" ");
+    String[] words = string.toLowerCase()
+      .replaceAll("[^a-z ]", "")
+      .split(" ");
     for (String word : words) {
       word = word.toLowerCase();
 
