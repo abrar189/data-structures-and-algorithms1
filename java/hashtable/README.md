@@ -33,6 +33,7 @@ but however it suffers from O(n) in the collisions cases.
 -
 [link of code](https://github.com/abrar189/data-structures-and-algorithms1/tree/hashtable/java/hashtable/app/src)
 
+
 # challenge 31 :
 
 
@@ -48,3 +49,22 @@ write a method that take string and Find the first repeated word in the string
 
 - time : O(n) because we have for loop  (we have n of elements)
 - space : O(n)  we make addition space for declare array
+
+
+
+# challenge 32 :
+
+
+## Challenge Summary
+
+write a method that accept two binary trees and return array have all values  found to be in the two binary trees
+
+## Whiteboard Process
+
+![image](./img/ch32.PNG)
+
+## Approach & Efficiency
+
+- time : O(n) because we have for loop
+- space : O(n)  we make addition space for declare array and hash map
+
