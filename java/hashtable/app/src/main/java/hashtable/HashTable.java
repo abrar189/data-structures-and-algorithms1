@@ -1,5 +1,7 @@
 package hashtable;
 
+import treeIntersection.BinaryTree;
+
 import java.util.*;
 
 public class HashTable<K, V> {
@@ -117,4 +119,6 @@ public class HashTable<K, V> {
     }
     return "NO REPEATED WORDS";
   }
+
+
 }

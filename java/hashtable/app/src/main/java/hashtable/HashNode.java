@@ -6,7 +6,6 @@ public class HashNode <K, V> {
 
   K key;
   V value;
-//  HashNode<K,V> head;
 
   final int hashCode;
 
