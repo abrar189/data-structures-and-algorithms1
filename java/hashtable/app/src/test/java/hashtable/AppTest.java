@@ -8,16 +8,20 @@ import treeIntersection.BinaryTree;
 import treeIntersection.Node;
 import treeIntersection.Tree;
 
+import java.util.HashMap;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-    }
+  @Test
+  void appHasAGreeting() {
+    App classUnderTest = new App();
+    assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+  }
 
-  @Test void HashTableTest() {
-   HashTable HashFun= new HashTable();
+  @Test
+  void HashTableTest() {
+    HashTable HashFun = new HashTable();
 
 //   Adding a key/value to your hashtable results in the value being in the data structure
     HashFun.add("John", 300);
@@ -27,23 +31,25 @@ class AppTest {
     assertEquals(300, HashFun.get("John"));
 
 //    Successfully returns null for a key that does not exist in the hashtable
-    assertEquals(null , HashFun.get("null"));
+    assertEquals(null, HashFun.get("null"));
 
 //    contains function indicating if the key exists in the table already.
-    assertEquals(true , HashFun.contains("John"));
-    assertEquals(false , HashFun.contains("abrar"));
-
+    assertEquals(true, HashFun.contains("John"));
+    assertEquals(false, HashFun.contains("abrar"));
 
 
   }
-  @Test void repeatedWordTest() {
-      HashTable repeatWord= new HashTable();
 
-      assertEquals( "was", HashTable.repeatedWord("Once was upon a time,was there was a brave princess who"));
+  @Test
+  void repeatedWordTest() {
+    HashTable repeatWord = new HashTable();
+
+    assertEquals("was", HashTable.repeatedWord("Once was upon a time,was there was a brave princess who"));
   }
 
 
-  @Test void treeTest() {
+  @Test
+  void treeTest() {
     BinaryTree<Integer> firstBinaryTree = new BinaryTree<>(new Node<>(5));
     Node<Integer> node1 = new Node<>(2);
     Node<Integer> node2 = new Node<>(4);
@@ -61,7 +67,25 @@ class AppTest {
     Node<Integer> node10 = new Node<>(5, node9, null);
     secondBinaryTree.root.right = node10;
     secondBinaryTree.root.left = node8;
-    assertEquals( "[1, 2, 5]", Tree.treeIntersection(firstBinaryTree, secondBinaryTree).toString());
+    assertEquals("[1, 2, 5]", Tree.treeIntersection(firstBinaryTree, secondBinaryTree).toString());
 
+  }
+
+  @Test
+  void lefteJoinTest()  {
+
+    HashMap hashMap=new HashMap();
+    hashMap.put("keyOne","1");
+    hashMap.put("keyTow","2");
+    hashMap.put("keyThree","3");
+    hashMap.put("keyFour","4");
+
+    HashMap hashMapTow=new HashMap();
+    hashMapTow.put("keyOne","11");
+    hashMapTow.put("keyTow","22");
+    hashMapTow.put("keyThree","33");
+    hashMapTow.put("Not exist ","");
+
+    assertEquals("{keyThree= 3,33 , keyTow= 2,22 , keyOne= 1,11 , keyFour= 4,null }",HashTable.hashMapLeftJoinFun(hashMap,hashMapTow).toString());
   }
 }

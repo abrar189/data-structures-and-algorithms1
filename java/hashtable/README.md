@@ -68,3 +68,20 @@ write a method that accept two binary trees and return array have all values  fo
 - time : O(n) because we have for loop
 - space : O(n)  we make addition space for declare array and hash map
 
+
+
+# challenge 33 :
+
+
+## Challenge Summary
+
+Write a function called left join Arguments: two hash maps The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values. The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values. and return hashMap
+
+## Whiteboard Process
+
+![image](./img/ch33.PNG)
+
+## Approach & Efficiency
+
+- time : O(n) because we have for loop
+- space : O(n)  we make addition space for declare hash map
