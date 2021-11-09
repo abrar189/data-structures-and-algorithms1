@@ -120,5 +120,19 @@ public class HashTable<K, V> {
     return "NO REPEATED WORDS";
   }
 
+  public static HashMap<String, String> hashMapLeftJoinFun(HashMap<String, String> hashMapOne, HashMap<String, String> hashMapTow){
+    HashMap<String,String> result=new HashMap<>();
 
+    for (String hashMapOneKeys :hashMapOne.keySet()) {
+      if (hashMapTow.containsKey(hashMapOneKeys)) {
+        String value=" "+(hashMapOne.get(hashMapOneKeys)+","+hashMapTow.get(hashMapOneKeys)+" ");
+        result.put(hashMapOneKeys,value);
+
+      }else {
+        String value2=" "+(hashMapOne.get(hashMapOneKeys)+",null ");
+        result.put(hashMapOneKeys,value2);
+      }
+    }
+    return result;
+  }
 }

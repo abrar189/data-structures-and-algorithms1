@@ -7,6 +7,8 @@ import treeIntersection.BinaryTree;
 import treeIntersection.Node;
 import treeIntersection.Tree;
 
+import java.util.HashMap;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -54,7 +56,22 @@ public class App {
       secondBinaryTree.root.right = node10;
       secondBinaryTree.root.left = node8;
 
-      System.out.println(Tree.treeIntersection(firstBinaryTree, secondBinaryTree));
+//      System.out.println(Tree.treeIntersection(firstBinaryTree, secondBinaryTree));
 
+
+      HashMap hashMap=new HashMap();
+      hashMap.put("keyOne","1");
+      hashMap.put("keyTow","2");
+      hashMap.put("keyThree","3");
+      hashMap.put("keyFour","4");
+
+      HashMap hashMapTow=new HashMap();
+      hashMapTow.put("keyOne","11");
+      hashMapTow.put("keyTow","22");
+      hashMapTow.put("keyThree","33");
+      hashMapTow.put("Not exist ","");
+
+      System.out.println(HashTable.hashMapLeftJoinFun(hashMap,hashMapTow));
     }
+
 }
