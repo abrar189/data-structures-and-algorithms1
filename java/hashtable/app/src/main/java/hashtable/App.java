@@ -7,7 +7,9 @@ import treeIntersection.BinaryTree;
 import treeIntersection.Node;
 import treeIntersection.Tree;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 public class App {
     public String getGreeting() {
@@ -71,7 +73,60 @@ public class App {
       hashMapTow.put("keyThree","33");
       hashMapTow.put("Not exist ","");
 
-      System.out.println(HashTable.hashMapLeftJoinFun(hashMap,hashMapTow));
-    }
+//      System.out.println(HashTable.hashMapLeftJoinFun(hashMap,hashMapTow));
 
+      System.out.println(isUnique("Itt twas a queer"));
+//      String arr =  "Batman Thor Batman Flash Batman ";
+//      FrequentWord(arr);
+
+    }
+  public static boolean isUnique(String string)
+  {
+    String[] words = string.toLowerCase()
+      .replaceAll("[^a-z ]","").split(" ");
+    for(String ch:words )
+    {
+      if(ch.length()==1)
+      {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  public static void FrequentWord(String string)
+  {
+    // Insert all unique strings and update count if a string is not unique.
+    Map<String,Integer> hshmap = new HashMap<String, Integer>();
+    String[] words = string.toLowerCase()
+      .replaceAll("[^a-z ]", "")
+      .split(" ");
+    for (String str : words)
+    {
+      if (hshmap.keySet().contains(str)) // if already exists then update count.
+        hshmap.put(str, hshmap.get(str) + 1);
+      else
+        hshmap.put(str, 1); // else insert it in the map.
+    }
+    // Traverse the map for the maximum value.
+    String maxStr = "";
+    int maxVal = 0;
+    for (Map.Entry<String,Integer> entry : hshmap.entrySet())
+    {
+      String key = entry.getKey();
+      Integer count = entry.getValue();
+      if (count > maxVal)
+      {
+        maxVal = count;
+        maxStr = key;
+      }
+      // Condition for the tie.
+      else if (count == maxVal){
+        if (key.length() < maxStr.length())
+          maxStr = key;
+      }
+    }
+    System.out.println("Most frequent word: "+ maxStr);
+    System.out.println("Count: "+ maxVal);
+  }
 }
