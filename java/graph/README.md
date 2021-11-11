@@ -46,3 +46,4 @@ A graph is a non-linear data structure that can be looked at as a collection of 
 - Arguments: none
 - Returns the total number of nodes in the graph
 
+[link of code](https://github.com/abrar189/data-structures-and-algorithms1/tree/graph/java/graph)
