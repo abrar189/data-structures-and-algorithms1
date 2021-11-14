@@ -11,5 +11,7 @@
 |5| [README7](challenge7/README.md) |
 |6| [README8](challenge8/README.md) |
 |7| [README11](challenge11/README.md)|
-|8| [README13](challenge13/README.md)|
+|8| [README16](challenge16/README.md)|
+|10| [README18](challenge18/README.md)|
+|11| [README26](challenge26/README.md)|
 |    |    |    |

@@ -1,28 +1,24 @@
 package challengs;
 
 public class Animals {
-  public String type;
+  public String name;
 
-  // Constructor
-  Animals(String type) {
-    this.type = type;
+  public Animals(String name) {
+    this.name = name;
   }
 
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  @Override
   public String toString() {
-    return type;
+    return "Animals{" +
+      "name='" + name + '\'' +
+      '}';
   }
-
-//  private String nameOfAnimal;
-//
-//  public Animals(String nameOfAnimal) {
-//    this.nameOfAnimal = nameOfAnimal;
-//  }
-//
-//  public String getNameOfAnimal() {
-//    return nameOfAnimal;
-//  }
-//
-//  public void setNameOfAnimal(String nameOfAnimal) {
-//    this.nameOfAnimal = nameOfAnimal;
-//  }
 }
