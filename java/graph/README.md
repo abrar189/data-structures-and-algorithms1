@@ -59,7 +59,7 @@ write a method to traverse a graph using breadth-first
 
 ### Whiteboard Process
 
-![image](./img/ch36.PNG)
+![image](./img/cha36.PNG)
 
 ### Approach & Efficiency
 
