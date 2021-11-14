@@ -47,3 +47,23 @@ A graph is a non-linear data structure that can be looked at as a collection of 
 - Returns the total number of nodes in the graph
 
 [link of code](https://github.com/abrar189/data-structures-and-algorithms1/tree/graph/java/graph)
+
+
+## challenge 36 :
+
+### Challenge Summary
+
+write a method to traverse a graph using breadth-first
+- input -> Node
+- output -> A collection of nodes in the order they were visited.
+
+### Whiteboard Process
+
+![image](./img/ch36.PNG)
+
+### Approach & Efficiency
+
+- time : O(n^2) - nested loop
+- scape : O(n) - create new list and Set.
+
+[link of code](https://github.com/abrar189/data-structures-and-algorithms1/tree/graph-breadth-first/java/graph/app/src)
