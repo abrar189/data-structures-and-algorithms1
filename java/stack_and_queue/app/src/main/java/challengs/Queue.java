@@ -28,7 +28,6 @@ public class Queue<T> {
       rear = node;
     }
   }
-
   public T dequeue() {
     T data;
     if (isEmpty()) {
@@ -39,11 +38,9 @@ public class Queue<T> {
       return data;
     }
   }
-
   public T peek() {
     return (T) front.getData();
   }
-
   public boolean isEmpty() {
     return front == null;
   }
