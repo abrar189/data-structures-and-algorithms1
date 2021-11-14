@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62d64e10-477b-4f21-9baf-9ab76392b507" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/stack/and/Queue/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Queue/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/stack/and/Queue/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Queue/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/stack/and/Queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Queue/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/stack/and/Queue/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Queue/Stack.java" afterDir="false" />
-    </list>
+    <list default="true" id="62d64e10-477b-4f21-9baf-9ab76392b507" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

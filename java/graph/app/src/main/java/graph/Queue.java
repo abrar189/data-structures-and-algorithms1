@@ -1,6 +1,7 @@
-package challengs;
+package graph;
 
-public class Queue<T> {
+public class Queue<T>{
+
 
   public Node<T> front;
   public Node<T> rear;
@@ -28,19 +29,22 @@ public class Queue<T> {
       rear = node;
     }
   }
+
   public T dequeue() {
     T data;
     if (isEmpty()) {
       return (T) "Queue is empty";
     } else {
-       data = (T) front.getData();
+      data = (T) front.getValue();
       front = front.getNext();
       return data;
     }
   }
+
   public T peek() {
-    return (T) front.getData();
+    return (T) front.getValue();
   }
+
   public boolean isEmpty() {
     return front == null;
   }
@@ -67,4 +71,6 @@ public class Queue<T> {
       ", top=" + top +
       '}';
   }
+
 }
+

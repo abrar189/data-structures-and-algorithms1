@@ -16,6 +16,7 @@ public class Stack< T>{
   public Stack() {
   }
 
+
   public void push(T data) {
     if (isEmpty()) {
       Node<T> node = new Node<>(data);
@@ -26,7 +27,6 @@ public class Stack< T>{
       top = node;
     }
   }
-
   public T pop() {
     if (isEmpty()) {
       return (T) "The stack is empty";
@@ -36,7 +36,6 @@ public class Stack< T>{
       return data;
     }
   }
-
   public T peek() {
     if (isEmpty()) {
       return (T) "The stack is empty";
@@ -44,7 +43,6 @@ public class Stack< T>{
       return top.getData();
     }
   }
-
   public boolean isEmpty() {
     return top == null;
   }

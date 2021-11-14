@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396d0417-0530-43c4-b2f8-5bb4d24ad4c0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Stack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Stack/.idea/workspace.xml" afterDir="false" />
-
+    <list default="true" id="25111fdc-d4a2-4895-b6b6-8ada9be23003" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/challenge5/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/challenge5/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/challenge5/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/challenge5/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/challenge5/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/challenge5/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,17 +23,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="challenge5" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -41,43 +35,43 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1yz9RHnBp2Hz8Lgg1hO6mgDy0Qx" />
+  <component name="ProjectId" id="20HaJwGKV1BOwF3ZZSR9m5IhVDf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="challenge5.App" />
-      <module name="challenge5.app.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\STUDENT\401\data-structures-and-algorithms1\java\challenge26\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\STUDENT\401\data-structures-and-algorithms1\java\challenge26\img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.AppTest.quickSort">
+    <configuration name="AppTest.quichSort" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;codes.AppTest.quichSort&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -93,12 +87,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.testZip" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.quickSort" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest.testZip&quot;" />
+        <option name="scriptParameters" value="--tests &quot;codes.AppTest.quickSort&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -114,12 +108,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.testinsertAfter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.testMergeSort" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest.testinsertAfter&quot;" />
+        <option name="scriptParameters" value="--tests &quot;codes.AppTest.testMergeSort&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -135,12 +129,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.testinsertAfterr" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.testSortArry" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest.testinsertAfterr&quot;" />
+        <option name="scriptParameters" value="--tests &quot;codes.AppTest.testSortArry&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -156,12 +150,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.testinsertbefor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.testsort" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge5.AppTest.testinsertbefor&quot;" />
+        <option name="scriptParameters" value="--tests &quot;codes.AppTest.testsort&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -179,22 +173,22 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppTest" />
-        <item itemvalue="Gradle.AppTest.testinsertAfterr" />
-        <item itemvalue="Gradle.AppTest.testinsertbefor" />
-        <item itemvalue="Gradle.AppTest.testinsertAfter" />
-        <item itemvalue="Gradle.AppTest.testZip" />
+        <item itemvalue="Gradle.AppTest.quickSort" />
+        <item itemvalue="Gradle.AppTest.quichSort" />
+        <item itemvalue="Gradle.AppTest.testMergeSort" />
+        <item itemvalue="Gradle.AppTest.testSortArry" />
+        <item itemvalue="Gradle.AppTest.testsort" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="396d0417-0530-43c4-b2f8-5bb4d24ad4c0" name="Changes" comment="" />
-      <created>1633243540177</created>
+      <changelist id="25111fdc-d4a2-4895-b6b6-8ada9be23003" name="Changes" comment="" />
+      <created>1635703902161</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1633243540177</updated>
+      <updated>1635703902161</updated>
     </task>
     <servers />
   </component>
@@ -209,5 +203,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
