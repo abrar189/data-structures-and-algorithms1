@@ -29,10 +29,6 @@ public class Graph <T>{
       listOfweight.put(value2 + "->" + value1 , weight);
     }
 
-
-
-    listOfweight.put(value1 + "->" + value2 , weight);
-    listOfweight.put(value2 + "->" + value1 , weight);
   }
 
   public Set<Node<T>> getNodes() {
