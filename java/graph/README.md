@@ -81,7 +81,7 @@ Write a function called business trip, and Determine whether the trip is possibl
 
 ### Whiteboard Process
 
-![image](./img/cha37.PNG)
+![image](./img/ch37.PNG)
 
 ### Approach & Efficiency
 
