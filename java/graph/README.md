@@ -67,3 +67,27 @@ write a method to traverse a graph using breadth-first
 - scape : O(n) - create new list and Set.
 
 [link of code](https://github.com/abrar189/data-structures-and-algorithms1/tree/graph-breadth-first/java/graph/app/src)
+
+
+
+## challenge 37 :
+
+### Challenge Summary
+
+Write a function called business trip, and Determine whether the trip is possible with direct flights, and how much it would cost.
+
+- Arguments: graph, array of city names
+- Return: cost or null
+
+### Whiteboard Process
+
+![image](./img/ch37.PNG)
+
+### Approach & Efficiency
+
+- time : O(n) we have loop
+- pace : O(1) no addition space create
+
+[link of code](https://github.com/abrar189/data-structures-and-algorithms1/tree/graph-business-trip/java/graph/app/src)
+
+

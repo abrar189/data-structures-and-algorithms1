@@ -20,18 +20,18 @@ class AppTest {
 
 
 }
-  @Test void addedgeTest(){
-
-    Graph graph = new Graph();
-
-    graph.addNode("10");
-    graph.addNode("1");
-
-    graph.addEdge("10", "1");
-
-    assertEquals("[1, 10]",graph.getNodes().toString());
-    assertEquals(2, graph.size());
-  }
+//  @Test void addedgeTest(){
+//
+//    Graph graph = new Graph();
+//
+//    graph.addNode("10");
+//    graph.addNode("1");
+//
+//    graph.addEdge("10", "1");
+//
+//    assertEquals("[1, 10]",graph.getNodes().toString());
+//    assertEquals(2, graph.size());
+//  }
   @Test
   public void emptyGraph(){
 
@@ -40,25 +40,40 @@ class AppTest {
 
   }
 
+//  @Test
+//  public void breadth_First(){
+//    Graph graph = new Graph();
+//    graph.addNode("10");
+//    graph.addNode("5");
+//    graph.addNode("1");
+//    graph.addNode("4");
+//    graph.addNode("7");
+//    graph.addNode("6");
+//
+//    graph.addEdge("10" , "1");
+//    graph.addEdge("1" , "5");
+//    graph.addEdge("7" , "10");
+//    graph.addEdge("4" , "5");
+//    graph.addEdge("4" , "6");
+//    graph.addEdge("7" , "6");
+//
+//    assertEquals("[5, 1, 4, 10, 6, 7]",graph.breadthFirst("5").toString());
+//
+//  }
+
   @Test
-  public void breadth_First(){
+  public void businessTripTest(){
     Graph graph = new Graph();
     graph.addNode("10");
     graph.addNode("5");
     graph.addNode("1");
-    graph.addNode("4");
-    graph.addNode("7");
-    graph.addNode("6");
 
-    graph.addEdge("10" , "1");
-    graph.addEdge("1" , "5");
-    graph.addEdge("7" , "10");
-    graph.addEdge("4" , "5");
-    graph.addEdge("4" , "6");
-    graph.addEdge("7" , "6");
+    graph.addEdge("10" , "1",150);
+    graph.addEdge("1" , "5",120);
 
-    assertEquals("[5, 1, 4, 10, 6, 7]",graph.breadthFirst("5").toString());
+    String[] trip = {"10" , "1" , "5"};
+
+    assertEquals("true, $270",graph.businessTrip("10",trip).toString());
 
   }
-
 }
