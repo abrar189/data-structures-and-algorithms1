@@ -68,12 +68,35 @@ class AppTest {
     graph.addNode("5");
     graph.addNode("1");
 
+
     graph.addEdge("10" , "1",150);
     graph.addEdge("1" , "5",120);
 
     String[] trip = {"10" , "1" , "5"};
 
     assertEquals("true, $270",graph.businessTrip("10",trip).toString());
+
+  }
+
+  @Test
+  public void depthTest(){
+    Graph graph = new Graph();
+    graph.addNode("10");
+    graph.addNode("5");
+    graph.addNode("1");
+    graph.addNode("4");
+    graph.addNode("7");
+    graph.addNode("6");
+
+    graph.addEdge("10" , "1",150);
+    graph.addEdge("1" , "5",120);
+    graph.addEdge("7" , "10",160);
+    graph.addEdge("4" , "5",200);
+    graph.addEdge("4" , "6",170);
+    graph.addEdge("7" , "6",90);
+
+
+    assertEquals("[5, 4, 6, 7, 10, 1]",graph.depthFirst("5").toString());
 
   }
 }

@@ -31,10 +31,10 @@ public class App {
       String[] trip3 = {"6" , "1" , "5" , "7" , "5"  };
       String[] trip4 = {"6" , "7" , "10" , "1" , "5"  };
 
-      System.out.println(graph.businessTrip("10",trip));
-      System.out.println(graph.businessTrip("4",trip2));
-      System.out.println(graph.businessTrip("6",trip3));
-      System.out.println(graph.businessTrip("6",trip4));
+//      System.out.println(graph.businessTrip("10",trip));
+//      System.out.println(graph.businessTrip("4",trip2));
+//      System.out.println(graph.businessTrip("6",trip3));
+//      System.out.println(graph.businessTrip("6",trip4));
 //      System.out.println(graph);
 //      System.out.println(graph.getNodes());
 //      System.out.println(graph.getNeighbors("10"));
@@ -46,7 +46,9 @@ public class App {
 //      System.out.println(graph.breadthFirst("7"));
 //      System.out.println(graph.breadthFirst("10"));
 
-
+      System.out.println(graph.depthFirst("5"));
+      System.out.println(graph.depthFirst("7"));
+      System.out.println(graph.depthFirst("10"));
 
     }
 }
