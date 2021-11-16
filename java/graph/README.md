@@ -91,3 +91,21 @@ Write a function called business trip, and Determine whether the trip is possibl
 [link of code](https://github.com/abrar189/data-structures-and-algorithms1/tree/graph-business-trip/java/graph/app/src)
 
 
+## challenge 38 :
+
+### Challenge Summary
+
+write a method to traverse a graph using depth-first
+- input -> Node
+- output -> A collection of nodes in their pre-order depth-first traversal order
+
+### Whiteboard Process
+
+![image](./img/cha38.PNG)
+
+### Approach & Efficiency
+
+- time : O(n^2) - nested loop
+- scape : O(n) - create new list and Set.
+
+[link of code](https://github.com/abrar189/data-structures-and-algorithms1/tree/graph-depth-first/java/graph/app/src)
