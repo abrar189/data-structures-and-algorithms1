@@ -101,7 +101,7 @@ write a method to traverse a graph using depth-first
 
 ### Whiteboard Process
 
-![image](./img/cha38.PNG)
+![image](./img/ch38.PNG)
 
 ### Approach & Efficiency
 
